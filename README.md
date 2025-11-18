@@ -28,7 +28,7 @@ the main role of this layer, is to transmit raw bits **[0|1]**, from one device 
 
 Encoding and modulation are two fundamental processes at the physical layer of the **OSI Model**, that prepare digital data for transmission over physical media;
 
-###### **Encoding:**
+##### **Encoding:**
 encoding is the process of converting raw digital bits [0|1], into a specific pattern of signals that can be transmitted across a physical medium, the encoded signals represent the bits in a way suitable for the transmission environment, ensuring proper synchronization between sender and reciever...{to complete !}
 Various encoding schemes exist, such as:
 
@@ -52,7 +52,7 @@ for further more understanding, here is a Youtube video explaining **BIPHASE-L (
 The reciever of the coming data, has hardware decives called **Network Interface Cards** **(NICs)** that are designed and programmed to catch, interpret, decode and demodulate the physical signals into digital bits based on the encoding scheme used (NRZ, Manchester...).
 this **(NICs)** is controlled by firmware (low-level software) and drivers within the operating system, which manage the communication between hardware and higher-level network protocols.
 
-###### **Modulation:**
+##### **Modulation:**
 Modulation prepares the signal for effective transmission by imprinting the encoded data onto a fast-moving carrier wave tuned to a frequency that travels well through the chosen medium, ensuring reliable reception at the other end.
 The coming encoded data arrives, the modulator changes the carrier's amplitude, frequency or phase according to the encoded signal, effectively embedding the data onto this wave.
 So modulation tailors the encoded digital data to physically compatible signals that can be transmitted reliably over the intended medium, this process ensures the data can travel long distances or through complexe environments while being received and decoded properly at the other end.
