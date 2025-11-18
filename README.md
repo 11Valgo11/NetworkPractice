@@ -28,7 +28,7 @@ the main role of this layer, is to transmit raw bits **[0|1]**, from one device 
 
 Encoding and modulation are two fundamental processes at the physical layer of the **OSI Model**, that prepare digital data for transmission over physical media;
 
-* **Encoding:** encoding is the process of converting raw digital bits [0|1], into a specific pattern of signals that can be transmitted across a physical medium, the encoded signals represent the bits in a way suitable for the transmission environment, ensuring proper synchronization between sender and reciever...{to complete !}
+**Encoding:** encoding is the process of converting raw digital bits [0|1], into a specific pattern of signals that can be transmitted across a physical medium, the encoded signals represent the bits in a way suitable for the transmission environment, ensuring proper synchronization between sender and reciever...{to complete !}
 Various encoding schemes exist, such as:
 
 * ***Non-Return-to-Zero (NRZ)***: Uses two voltage levels representing 0 and 1 without returning to zero between bits, meaning if we have [110],
