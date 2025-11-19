@@ -102,3 +102,21 @@ This layer is responsible for moving data packets from the source host to the de
 * ARP (Address Resolution Protocol): a protocol used in IPv4 networks that maps an IP address to the physical MAC address of a device on a local network.
 * NAT (Network Address Translation): A technique used to translate private (local) IP addresses to a signle or a few public IP addresses, so once a packets is forwarded from a device its forwarded to the internet as an public IP that defines that local network.
 
+#### **➤ Transport/Session Layer**: (Layer Three/Four)
+
+* **Transport Layer**: Handles end-to-end communication between hosts, focusing on reliable data transfer, flow control, error correction, segmentation and managing connections (TCP sessions), it ensures data arrives complete and in order.
+* **Session Layer**: manages sessions or dialogues between applications, focusing on establishing, maintaining, synchronizing and terminating communication sessions, it can also insert checkpoints and handle recovery from interruptions within long sessions.
+
+#### **Transmission Control Protocol (TCP)**:
+
+The Transport Layer and the Session Layer intersect in practical terms when a TCP connection is established:
+➤ TCP is a connection-oriented protocol used to transmit data over a network, ensuring reliable, ordered error checking in delivery between devices:
+
+* The conncetion establishment works using the **Three Way Handshake [SYN, SYN-ACK, ACK]**.
+* THe Data transmission works by btraking the large data into segments, each one has a sequence number that can be used to re assable the segmented data as a whole again, each time the reviever gets a data he send **ACK** sign of aknowledgment to the sender as the data being recieved, if the **ACK** was not sent, the sender re send the data.
+* Controling the flow of data transmission, by windowing how much data must be sent in order to not overwhelm the reciver.
+* Error handling by detecting corrupted data; corrupted segments are retransmitted.
+* The connection terminates by sending **FIN** & **ACK** signs to end the connection.
+
+➤ TCP which operates at the Transport Layer, manages end-to-end connection oriented communication, providing reliabel data transfer, packet sequencing and error correction, when a TCP connection is established, it implicitly establishes a session-an ongoing maintained communication link between two endpoints, this session management ressemnles the tasks attributed to the Session Layer, such as connection establishment, maintenance, synchronization and termination.
+
