@@ -83,5 +83,22 @@ in Ethernet, for example, the preamble consists of 7 bytes (56 bits) followed by
 * 6: **Frame Check Sequence (FCS)**: (4-bytes/32 bits) field containing the **Cyclic Redundancy Check** value, this value is a checksum calculated from all previous parts of the frame and is used by the receiver to detect errors introduced during transmission.
 ***
 
-#### **➤ Transport Layer**: (Layer Three)
+#### **➤ Network Layer**: (Layer Three)
+
+This layer is responsible for moving data packets from the source host to the destination host across one or more networks, its main functionalities include:
+
+* **Logical Addressing**: Assigns IP addresses to devices, ensuring proper identification and communication across networks.
+* **Packetization**: Encapsulates data from Transport Layer into packets for transmission.
+* **Routing**: Determines the best path for packets to travel across multiple interconnected networks using routing protocols and algorithms.
+* **Forwarding**: reading a packet's desitination IP, looking up the best route in the forwarding table, and sending the packet out the right interface toward its destination.
+* **Fragmentation and Reassembly**: Splits packets into smaller fragments if they exceed the network's Maximum Transmission Unit (MTU), then reassembles them at the destination.
+* **Subnetting**: Divides larger networks into smaller subnetworks for effecient addressing and traffic management.
+* **Netwrok Address Translation (NAT)**: Maps private IPs to public IPs for internet communication, conserving address space and adding security.
+
+***Protocols Operating at the Network Layer***
+
+* IP (Internet Protocol): The fundamental protocol for addressing and routing packets between devices on networks, using data encapsulation from the Transport layer into packets with IP headers containing source and destination IP addresses (IPv4/IPv6), then routed across muiltiples networks from the source to the last end.
+* ICMP (Internet Control Message Protocol): a supporting protocol used mainly by routers and hosts to send error messages and operational information.
+* ARP (Address Resolution Protocol): a protocol used in IPv4 networks that maps an IP address to the physical MAC address of a device on a local network.
+* NAT (Network Address Translation): A technique used to translate private (local) IP addresses to a signle or a few public IP addresses, so once a packets is forwarded from a device its forwarded to the internet as an public IP that defines that local network.
 
