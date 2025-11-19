@@ -8,6 +8,7 @@
 
 ***Net Practice, 42 Project aimed to understand TCP/IP, OSI Model and sub-netting, theoretically and by practice using sub-netting exercises simulations.***
 ***
+* ***Very thankfull to the Youtube Channel [LearnCantrill](https://www.youtube.com/watch?v=6hPMdpk9qA4&list=PLTk5ZYSbd9Mi_ya5tVFD8NFfU1YZOyml1&index=1)***
 
 #### What is Subnetting ?
 
@@ -68,13 +69,13 @@ The base functionality of this layer, is the **Framing**, through a process of *
 
 ***Frame parts for different functionalities***:
 
-* 1: **THe Preamble**: its a special pattern of bits sent at the very beginning of each frame, its main functionality is; Synchronization, it allows the receiver's hardware to synchronize its clock with the incoming signal from the sender; it also signals the receiver that a new frame is about to start, preparing the receiver circuits to process the incoming data.
+* 1: **The Preamble**: its a special pattern of bits sent at the very beginning of each frame, its main functionality is; Synchronization, it allows the receiver's hardware to synchronize its clock with the incoming signal from the sender; it also signals the receiver that a new frame is about to start, preparing the receiver circuits to process the incoming data.
 in Ethernet, for example, the preamble consists of 7 bytes (56 bits) followed by a 1-byte Start Frame Delimiter **(SFD)** indicating the start of the frame's content.
 
 * 2/3: **Destination/Source MAC Addresses**: a 6-bytes (48 bits) field containing the unique physical address of the device (Destination for the device we are sending to/Source for the device thats sending the data). 
 
 * 4: **EtherType**: this field is an Ethernet frame (16 bits) that tells the recieving devie what kind of data is inside the frame's payload so it knows how to handle it, when a frame is sent the data part usually contains an IP packet, this packet can be either IPv4 or IPv6, the EtherType field contains a specific value that identifies them, the reciever looks for this to figure out what network layer protocl is carried inside so it passes the data payload to the appropriate protocol handler based on the IP version of the packet.
 
-* 5: **Payload**: Here lies the Ip packet itself, alongside its encapsulated hight-layer data (like TCP/UDP segments). its size is variable but must meet certain size requirements, Ethernet insists on a minimum payoad size of 46 bytes to ensure proper transmission, so if the actual data is smaller, the payload is padded with extra bytes, the maximum payload size is typically 1500 bytes (called the Maximum Transmission Unit) on standard Ethernet, but some networks support larger frames.
+* 5: **Payload**: Here lies the IP packet itself, alongside its encapsulated hight-layer data (like TCP/UDP segments). its size is variable but must meet certain size requirements, Ethernet insists on a minimum payoad size of 46 bytes to ensure proper transmission, so if the actual data is smaller, the payload is padded with extra bytes, the maximum payload size is typically 1500 bytes (called the Maximum Transmission Unit) on standard Ethernet, but some networks support larger frames.
 
 * 6: **Frame Check Sequence (FCS)**: (4-bytes/32 bits) field containing the **Cyclic Redundancy Check** value, this value is a checksum calculated from all previous parts of the frame and is used by the receiver to detect errors introduced during transmission.
