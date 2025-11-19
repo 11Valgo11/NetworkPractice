@@ -8,7 +8,7 @@
 
 ***Net Practice, 42 Project aimed to understand TCP/IP, OSI Model and sub-netting, theoretically and by practice using sub-netting exercises simulations.***
 ***
-* ***Very thankfull to the Youtube Channel [LearnCantrill](https://www.youtube.com/watch?v=6hPMdpk9qA4&list=PLTk5ZYSbd9Mi_ya5tVFD8NFfU1YZOyml1&index=1)***
+* ***Very thankful to the Youtube Channel [LearnCantrill](https://www.youtube.com/watch?v=6hPMdpk9qA4&list=PLTk5ZYSbd9Mi_ya5tVFD8NFfU1YZOyml1&index=1)***
 
 #### What is Subnetting ?
 
@@ -20,8 +20,9 @@ Through subnetting, network traffic can travel a shorter distance without passin
 **OSI Model** or Open systems interconnection model, is a conceptual framework used to understand and design how different computer systems communicate over a network.
 By deviding the network communication into seven distinct layers, each specific layer has its own functionality, enabling various hardware and software componenets to interoperate and exchange data effectively.
 
+***
 ### **OSI Model Layers**
-
+***
 #### **➤ Physical Layer**: (Layer One)
 the main role of this layer, is to transmit raw bits **[0|1]**, from one device to another over a physical medium such as wires, fiber optics or wireless channels, this layer is responsible for converting the digital data into signals suitable for transmission (encoding/modulation) and converting recieved signals back into data (decoding/demodulation).
 
@@ -61,6 +62,7 @@ So modulation tailors the encoded digital data to physically compatible signals 
 **How does modulation helps the data to travel safely?**:
 An example of modulation functionality, is shifting the encoded data onto a high-frequency carrier wave, so it allow it to propagate further without significant loss or distortion compared to low-frequency baseband signals, higher frequency carriers suffer less attenuation, making long-distance communication possible.
 
+***
 #### **➤ Data Link Layer**: (Layer Two)
 On this layer, the raw bits and signals prepared by the **Physical Layer** through Encoding/Modulation process, gets organized through frames, and this layer is responsible for error detection and sometimes correction.
 
@@ -79,3 +81,7 @@ in Ethernet, for example, the preamble consists of 7 bytes (56 bits) followed by
 * 5: **Payload**: Here lies the IP packet itself, alongside its encapsulated hight-layer data (like TCP/UDP segments). its size is variable but must meet certain size requirements, Ethernet insists on a minimum payoad size of 46 bytes to ensure proper transmission, so if the actual data is smaller, the payload is padded with extra bytes, the maximum payload size is typically 1500 bytes (called the Maximum Transmission Unit) on standard Ethernet, but some networks support larger frames.
 
 * 6: **Frame Check Sequence (FCS)**: (4-bytes/32 bits) field containing the **Cyclic Redundancy Check** value, this value is a checksum calculated from all previous parts of the frame and is used by the receiver to detect errors introduced during transmission.
+***
+
+#### **➤ Transport Layer**: (Layer Three)
+
