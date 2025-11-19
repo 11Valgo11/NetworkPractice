@@ -101,6 +101,7 @@ This layer is responsible for moving data packets from the source host to the de
 * ICMP (Internet Control Message Protocol): a supporting protocol used mainly by routers and hosts to send error messages and operational information.
 * ARP (Address Resolution Protocol): a protocol used in IPv4 networks that maps an IP address to the physical MAC address of a device on a local network.
 * NAT (Network Address Translation): A technique used to translate private (local) IP addresses to a signle or a few public IP addresses, so once a packets is forwarded from a device its forwarded to the internet as an public IP that defines that local network.
+***
 
 #### **➤ Transport/Session Layer**: (Layer Three/Four)
 
