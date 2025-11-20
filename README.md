@@ -101,9 +101,9 @@ This layer is responsible for moving data packets from the source host to the de
 * ICMP (Internet Control Message Protocol): a supporting protocol used mainly by routers and hosts to send error messages and operational information.
 * ARP (Address Resolution Protocol): a protocol used in IPv4 networks that maps an IP address to the physical MAC address of a device on a local network.
 * NAT (Network Address Translation): A technique used to translate private (local) IP addresses to a signle or a few public IP addresses, so once a packets is forwarded from a device its forwarded to the internet as an public IP that defines that local network.
-***
 
-#### **➤ Transport/Session Layer**: (Layer Three/Four)
+***
+#### **➤ Transport/Session Layer**: (Layer Four/Five)
 
 * **Transport Layer**: Handles end-to-end communication between hosts, focusing on reliable data transfer, flow control, error correction, segmentation and managing connections (TCP sessions), it ensures data arrives complete and in order.
 * **Session Layer**: manages sessions or dialogues between applications, focusing on establishing, maintaining, synchronizing and terminating communication sessions, it can also insert checkpoints and handle recovery from interruptions within long sessions.
@@ -114,10 +114,50 @@ The Transport Layer and the Session Layer intersect in practical terms when a TC
 ➤ TCP is a connection-oriented protocol used to transmit data over a network, ensuring reliable, ordered error checking in delivery between devices:
 
 * The conncetion establishment works using the **Three Way Handshake [SYN, SYN-ACK, ACK]**.
-* THe Data transmission works by btraking the large data into segments, each one has a sequence number that can be used to re assable the segmented data as a whole again, each time the reviever gets a data he send **ACK** sign of aknowledgment to the sender as the data being recieved, if the **ACK** was not sent, the sender re send the data.
+* THe Data transmission works by breaking the large data into segments, each one has a sequence number that can be used to re assable the segmented data as a whole again, each time the reviever gets a data he send **ACK** sign of aknowledgment to the sender as the data being recieved, if the **ACK** was not sent, the sender re send the data.
 * Controling the flow of data transmission, by windowing how much data must be sent in order to not overwhelm the reciver.
 * Error handling by detecting corrupted data; corrupted segments are retransmitted.
 * The connection terminates by sending **FIN** & **ACK** signs to end the connection.
 
-➤ TCP which operates at the Transport Layer, manages end-to-end connection oriented communication, providing reliabel data transfer, packet sequencing and error correction, when a TCP connection is established, it implicitly establishes a session-an ongoing maintained communication link between two endpoints, this session management ressemnles the tasks attributed to the Session Layer, such as connection establishment, maintenance, synchronization and termination.
+➤ TCP which operates at the Transport Layer, manages end-to-end connection oriented communication, providing reliabel data transfer, packet sequencing and error correction, when a TCP connection is established, it implicitly establishes a session-an ongoing maintained communication link between two endpoints, this session management resembles the tasks attributed to the Session Layer, such as connection establishment, maintenance, synchronization and termination.
 
+**Note**: The Session Layer, still has it own functionalities seperated from what TCP performs, although some of the Session Layer roles are embeded in the TCP, yet this layer manages higher-level session controls, such a dialog control, synchronization points or checkpoints (for recovery), token management (to avoid conflicts in dialogs), and more complexe coordination between multiple interactions or multiple conncetions that TCP alone does not handle.
+
+***
+#### **➤ Presentation Layer**: (Layer Six)
+
+The Presentation Layer focused primarily on data translation encryption, compression and formatting so that data from the sender's application is properly prepared for the reciver's application, this layer acts as translator and protector of data for the **Application Layer**.
+
+➤ Functionalities:
+
+* **Data Translation**: Converts data between different formats or endocing schemes used by different systems (translating characher encoding like ASCII to EBCDIC), so different platforms can understand each other.
+* **Data Compression**: Reduces the size of teh data to decrease transmission time and resource usage.
+* **Data Encryption/Decryption**: Secure data by encrypting it before transmissin and decrypting it on the receipt to protect against unauthorized access.
+* **Syntax and Semantics Management**: Ensures that complext data structures, like graphics or multimedia files, are formatted and represented consistently across platforms.
+***
+
+#### **➤ Application Layer**: (Layer Seven)
+
+This layer, is the top layer of the **OSI Model**, it serves as the closest layer to the end user, it provides the interface between user applications and teh underlying network, enabling software programs to communicate over network.
+
+➤ Functionalities:
+
+* **Network Virtual Terminal**: Allows users to log onto remote systems as if they were local, facilating remote access.
+* **File Transfer, Access and Managaement (FTAM)**: Provides services for accessing, retreiving and managing files on remote hosts.
+* **Email Services**: Manages sending, receiving and storage of email messages via protocols such as **SMTP, POP3 and IMAP**.
+* **Directory services**: Offers distrubuted databases for finding information about network resources such as username, services or devices.
+* **Name Resolution**: Converts human-friendly domain names to IP Adresses using DNS.
+* **Remote Login**: Enables users to securely log into another computer or server (through SSH).
+* **Data Representation and formatting**: Ensures data is presented in user-freindly formats, oftern interacting with the Presentation Layer for encoding, encryption and compression.
+* **User Authentication and Authorization**: Verifies user identities and controls access right to network resources.
+* **Error Handling and Recovery**: Provides mechanisms to detect errors and recover from communication failures within applications.
+
+***Common Protocols at the Application Layer:***
+
+* HTTP/HTTPS (Web Browsing)
+* FTP (File Transfer Protocol)
+* SMTP (Simple Mail Transfer Protocol) for sending, POP3 or IMAP for receiving
+* DNS (Domain Name System)
+* DHCP (Dynamic Host Configuration Protocol)
+* Telnet, SSH (Remote Login)
+***
