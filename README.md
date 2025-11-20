@@ -161,3 +161,18 @@ This layer, is the top layer of the **OSI Model**, it serves as the closest laye
 * DHCP (Dynamic Host Configuration Protocol)
 * Telnet, SSH (Remote Login)
 ***
+
+***
+### **Subnetting**
+***
+
+Subnetting is the proceess of divigin a large IP network into smaller, more manageable pieces called subnets or subnetworks, each subnets functions like a smaller network within the bigger network.
+It solved and provided multiple enhancements, such as:
+
+* **Efficeint IP Address Management:** it helps organizations use thier IP addresses more wisely by dividing a large network into smaller parts tailored to their needs, instead of giving out too many IP addresses that aren't needed, subnetting creates networks of just the right size for each group of devices
+* **Improved Network Performance**: By breaking a big network into smaller subnets, local traffic stays withing the usbnet, reducing congestion and collision on the network.
+* **Better Security and Control**: Subnets isolate group of devices, so network administrators can apply different secufiry policies and control traffic between subnets.
+* **Simplifide Network Management**: Smaller subnetworks are easier to manager and troubleshoot compared to a single large network.
+* **Supports Routing Efficiency**: Routers only need to manage traffic between subnets rather than every individual device, optimizing routing tables and paths.
+
+Before subnetting, large networks were inefficient and uwiedlym causing issues like IP address exhaustion, network congestion and diffuclty in managing resources, subnetting solved these by allowing netwroks to be logically segmented, improving resource utilizaton, performance and scalability.
