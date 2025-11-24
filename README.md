@@ -176,3 +176,12 @@ It solved and provided multiple enhancements, such as:
 * **Supports Routing Efficiency**: Routers only need to manage traffic between subnets rather than every individual device, optimizing routing tables and paths.
 
 Before subnetting, large networks were inefficient and uwiedlym causing issues like IP address exhaustion, network congestion and diffuclty in managing resources, subnetting solved these by allowing netwroks to be logically segmented, improving resource utilizaton, performance and scalability.
+
+### **Subnetting Diagrams**
+***
+![Logo](Img/Subnet1.png)
+***
+![Logo](Img/Subnet2.png)
+***
+![Logo](Img/Subnet3.png)
+***
