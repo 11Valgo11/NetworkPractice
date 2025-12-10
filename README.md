@@ -12,6 +12,16 @@
 ### Project Goals
 ***This projects aims to intreduce the concept of subnetting, its benefits and how can we use it to manage multiple networks efficently and without ip addresses exhaution, alongside with concepts such as: TCP/IP addressing, subnet mask, default gateway, routers and switches, OSI layers, etc.***
 
+### How to interact
+The project is practical learning module, providing us with a local website, that you can use after downloading the attached file presented in the project dashboard.
+Then you can start in Normal Mode, by entering your 42 login, and each level you pass, you will save on you 42 git repository (make sure you logged in with you exact login as the moulinette will use to know you configuration as the subject says).
+
+### AI usage in this project
+AI was used in this project as a tool to gather informations and resources, also understand and go in depth on the presented concept in this readme. **ASK -> READ -> UNDERSTAND -> ASK MORE -> WRITE.**
+
+### Submission details
+You have to save & push the Json file you get from each passed level and be placed at the repository root.
+
 * ***Very thankful to this Youtube Channels [LearnCantrill](https://www.youtube.com/watch?v=6hPMdpk9qA4&list=PLTk5ZYSbd9Mi_ya5tVFD8NFfU1YZOyml1&index=1) And [NetworkChunk](https://www.youtube.com/watch?v=5WfiTHiU4x8&list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF)***
 
 #### What is Subnetting ?
