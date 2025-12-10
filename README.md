@@ -180,6 +180,20 @@ This layer, is the top layer of the **OSI Model**, it serves as the closest laye
 ### **Subnetting**
 ***
 
+Before going into subnetting, we need to know and understand one of the key concepts:
+
+* **Default Gateway**:
+Is the device that sends your traffic out of your local network, when the wanted destination is out of reach and no on the same network, the default gateway is usually the router connceting multiple networks together.
+
+* **Routers**:
+Router is a device that conncets multiple networks together, deciding the best path for the data to travel across networks, and in the project standards we have:
+* Routing Table: is a table holding information for the router to know the next hop the data should be sent to, and the destination.
+* Destination: the device we would like the packet to reach as an end destination that we configure inside the routing table of the router.
+* Next Hop: which is the next router or interface is going to be used as a route in order to reach the destination device.
+
+* **Switches**:
+Switch is a device that connects multiple devices within the same network, and forward the data to the specific device configured as destination, they operate solely inside a local specific network, not like **Routers**, **Switches** rely on MAC addresses rather than IP.
+
 Subnetting is the proceess of divigin a large IP network into smaller, more manageable pieces called subnets or subnetworks, each subnets functions like a smaller network within the bigger network.
 It solved and provided multiple enhancements, such as:
 
