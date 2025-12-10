@@ -6,8 +6,12 @@
 ![Logo](Img/NetPractice.png)
 ***
 
-***Net Practice, 42 Project aimed to understand TCP/IP, OSI Model and sub-netting, theoretically and by practice using sub-netting exercises simulations.***
+***This project has been created as part of the 42 curriculum by ayel-bou***
 ***
+
+### Project Goals
+***This projects aims to intreduce the concept of subnetting, its benefits and how can we use it to manage multiple networks efficently and without ip addresses exhaution, alongside with concepts such as: TCP/IP addressing, subnet mask, default gateway, routers and switches, OSI layers, etc.***
+
 * ***Very thankful to this Youtube Channels [LearnCantrill](https://www.youtube.com/watch?v=6hPMdpk9qA4&list=PLTk5ZYSbd9Mi_ya5tVFD8NFfU1YZOyml1&index=1) And [NetworkChunk](https://www.youtube.com/watch?v=5WfiTHiU4x8&list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF)***
 
 #### What is Subnetting ?
