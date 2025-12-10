@@ -213,3 +213,5 @@ Before subnetting, large networks were inefficient and uwiedlym causing issues l
 ***
 ![Logo](Img/Subnet3.png)
 ***
+
+The last goal that project is oritented to, is to learn how to connect multiple subnetworks together using the router interfaces and the routing table, handling subnet ranges overlaps, and assuring the packets are sent to their exact destinations.
